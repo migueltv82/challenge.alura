@@ -1,258 +1,269 @@
-           :root {
-              --color-primario: #f3f5fc;
-              --color-secundario: #0a3b71;
-              --color-boton: #D8DFE8;
-              --color-mensaje: #fcfcfc;
-              --fuente-inter: "Inter", sans-serif;
-          }
-          
-          * {
-              padding: 0;
-              margin: 0;
-              background: var(--color-primario);
-              font-family: var(--fuente-inter);
-              font-weight: 600;
-              font-size: 1.5rem;
-              line-height: 150%;
-              box-sizing: border-box;
-          }
-          
-          body {
-              min-height: 100vh;
-              box-sizing: border-box;
-              display: flex;
-              flex-direction: column;
-          }
-          
-          .header {
-              position: absolute;
-              margin: 40px 0px opx 40px;
-          }
-          
-          .logo {
-              padding-top: 10px;
-              margin-left: 10px;
-              width: 120px;
-              height: 48px;
-          }
-          
-          .presentacion {
-              width: 80.5%;
-              max-width: 1300px;
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              margin: 10px 50px auto auto;
-              margin-bottom: 1%;
-              margin-left: 12%;
-              align-items: end;
-              min-height: calc(100vh - 90px -71px);
-              gap: 20px;
-          }
-          
-          .text-area {
-              height: 100%;
-              width: 85%;
-              border: none;
-              resize: none;
-              color: var(--color-secundario);
-              margin-top: 10%;
-              margin-bottom: 5%;
-              text-transform: lowercase;
-              font-size: 1.5rem;
-              max-width: 100%;
-          }
-          
-           ::placeholder {
-              color: var(--color-secundario);
-          }
-          
-          .text-area:focus {
-              outline: none;
-          }
-          
-          .mensaje {
-              width: 100%;
-              background: var(--color-mensaje);
-              background-image: url(persona.png), url(texto2.png);
-              background-position: top, bottom;
-              background-repeat: no-repeat;
-              background-size: 100%;
-              border: none;
-              border-radius: 24px;
-              color: var(--color-secundario);
-              margin-top: 8px;
-              margin-left: 1px;
-              padding-left: 20px;
-              position: relative;
-          }
-          
-          .mensaje:focus {
-              outline: none;
-          }
-          
-          .botones {
-              display: flex;
-              margin-top: 10px;
-              gap: 12px;
-          }
-          
-          .btncopiar {
-              display: none;
-              margin-top: 10px;
-          }
-          
-          .encrytp-btn {
-              background-color: var(--color-secundario);
-              border: 1px solid var(--color-secundario);
-              border-radius: 24px;
-              color: var(--color-boton);
-              cursor: pointer;
-              height: 67px;
-              width: 57%;
-              max-width: 368px;
-              min-width: 250px;
-          }
-          
-          .decryptBtn {
-              background-color: var(--color-boton);
-              border: 1px solid var(--color-secundario);
-              border-radius: 24px;
-              color: var(--color-secundario);
-              cursor: pointer;
-              height: 67px;
-              width: 57%;
-              max-width: 368px;
-              min-width: 250px;
-          }
-          
-          .boton-copiar {
-              background-color: var(--color-boton);
-              border: 1px solid var(--color-secundario);
-              border-radius: 30px;
-              color: var(--color-secundario);
-              cursor: pointer;
-              height: 67px;
-              width: 100%;
-              max-width: 368px;
-              min-width: 250px;
-              */ margin/top: 40%;
-          }
-          
-          .ingreso-txt {
-              display: flex;
-              flex-direction: column;
-              width: 100%;
-              align-items: start;
-              gap: 1px;
-          }
-          
-          .informacion-txt {
-              color: var(--color-secundario);
-              font-size: 40%;
-              font-family: inter;
-              width: 100%;
-              line-height: 100%;
-              margin-top: 0%;
-              margin-bottom: 0%;
-          }
-          
-          .estilo-footer {
-              font-size: 0.5rem;
-              color: var(--color-secundario);
-              text-align: center;
-              align-items: center;
-              margin-top: 0%;
-          }
-          
-          .area-conversion {
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              flex-grow: 1;
-              /*box-sizing: border-box;*/
-              justify-content: center;
-              padding: 10px;
-              gap: 10px;
-              width: 100%;
-              align-items: center;
-          }
-          
-          .text-area2 {
-              position: relative;
-          }
-          
-          .text-area2 textarea {
-              background-image: url('./imagenes/Muñeco.png');
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: auto;
-              /* La imagen cubrirá todo el área disponible */
-              padding: 10px;
-              resize: none;
-              width: 100%;
-              /* Ajusta el ancho del textarea al 100% del contenedor */
-              height: 100%;
-              /* Ajusta la altura del textarea al 100% del contenedor */
-              box-sizing: border-box;
-              /* Incluye el padding dentro del ancho/alto del textarea */
-          }
-          
-          .text-area2.no-background textarea {
-              background-image: none;
-          }
-          
-          @media(max-width:905px) .presentacion {
-              display: flex;
-              flex-direction: column;
-              width: auto;
-              margin-left: 5%;
-              align-items: center;
-              justify-content: center;
-          }
-          
-          .area-conversion {
-              width: 70%;
-              align-items: center;
-          }
-          
-          .estilo__footer {
-              justify-content: center;
-          }
-          
-          .informacion__txt {
-              font-size: 25%;
-          }
-          
-          .mensaje {
-              background-position: top, bottom;
-              background-size: 80%;
-          }
-          
-          .botones {
-              align-items: center;
-              justify-content: left;
-          }
-          
-          @media(max-width:640px) {
-              .presentacion {
-                  gap: 50px;
-              }
-              .mensaje {
-                  background-position: center, bottom;
-                  background-size: 100%;
-              }
-              .botones {
-                  flex-direction: column;
-                  height: 50px;
-                  align-items: flex-start;
-              }
-              .btncopiar {
-                  height: 50px;
-              }
-              @media(max-width:480px) {
-                  .mensaje {
-                      background-position: center, bottom;
-                      background-size: 110%;
-                  }
-              }
-          }
+              :root {
+             --color-primario: #f3f5fc;
+             --color-secundario: #0a3b71;
+             --color-boton: #D8DFE8;
+             --color-mensaje: #fcfcfc;
+             --fuente-inter: "Inter", sans-serif;
+         }
+         
+         * {
+             padding: 0;
+             margin: 0;
+             background: var(--color-primario);
+             font-family: var(--fuente-inter);
+             font-weight: 600;
+             font-size: 1.5rem;
+             line-height: 150%;
+             box-sizing: border-box;
+         }
+         
+         body {
+             min-height: 100vh;
+             box-sizing: border-box;
+             display: flex;
+             flex-direction: column;
+         }
+         
+         .header {
+             position: absolute;
+             margin: 40px 0px opx 40px;
+         }
+         
+         .logo {
+             padding-top: 10px;
+             margin-left: 10px;
+             width: 120px;
+             height: 48px;
+         }
+         
+         .presentacion {
+             width: 80.5%;
+             max-width: 1300px;
+             display: grid;
+             grid-template-columns: 2fr 1fr;
+             margin: 10px 50px auto auto;
+             margin-bottom: 1%;
+             margin-left: 12%;
+             align-items: end;
+             min-height: calc(100vh - 90px -71px);
+             gap: 20px;
+         }
+         
+         .text-area {
+             height: 100%;
+             width: 85%;
+             border: none;
+             resize: none;
+             color: var(--color-secundario);
+             margin-top: 10%;
+             margin-bottom: 5%;
+             text-transform: lowercase;
+             font-size: 1.5rem;
+             max-width: 100%;
+         }
+         
+         .text-area2 textarea {
+             background-image: url('./imagenes/Muñeco.png');
+             /* Ruta de la imagen */
+             background-repeat: no-repeat;
+             background-position: center;
+             /* Posiciona la imagen en el centro */
+             background-size: contain;
+             /* Ajusta el tamaño de la imagen */
+             padding: 10px;
+             resize: none;
+             width: 100%;
+             height: 100%;
+             box-sizing: border-box;
+             color: var(--color-secundario);
+             /* Color del texto */
+         }
+         
+         .text-area2.no-background textarea {
+             background-image: none;
+             /* Remueve la imagen cuando sea necesario */
+         }
+         
+          ::placeholder {
+             color: var(--color-secundario);
+         }
+         
+         .text-area:focus {
+             outline: none;
+         }
+         
+         .mensaje {
+             width: 100%;
+             background: var(--color-mensaje);
+             background-image: url(persona.png), url(texto2.png);
+             background-position: top, bottom;
+             background-repeat: no-repeat;
+             background-size: 100%;
+             border: none;
+             border-radius: 24px;
+             color: var(--color-secundario);
+             margin-top: 8px;
+             margin-left: 1px;
+             padding-left: 20px;
+             position: relative;
+         }
+         
+         .mensaje:focus {
+             outline: none;
+         }
+         
+         .botones {
+             display: flex;
+             margin-top: 10px;
+             gap: 12px;
+         }
+         
+         .btncopiar {
+             display: none;
+             margin-top: 10px;
+         }
+         
+         .boton-encriptar {
+             background-color: var(--color-secundario);
+             border: 1px solid var(--color-secundario);
+             border-radius: 24px;
+             color: var(--color-boton);
+             cursor: pointer;
+             height: 67px;
+             width: 57%;
+             max-width: 368px;
+             min-width: 250px;
+         }
+         
+         .boton-desencriptar {
+             background-color: var(--color-boton);
+             border: 1px solid var(--color-secundario);
+             border-radius: 24px;
+             color: var(--color-secundario);
+             cursor: pointer;
+             height: 67px;
+             width: 57%;
+             max-width: 368px;
+             min-width: 250px;
+         }
+         
+         .boton-copiar {
+             background-color: var(--color-boton);
+             border: 1px solid var(--color-secundario);
+             border-radius: 30px;
+             color: var(--color-secundario);
+             cursor: pointer;
+             height: 67px;
+             width: 100%;
+             max-width: 368px;
+             min-width: 250px;
+             */ margin/top: 40%;
+         }
+         
+         .ingreso-txt {
+             display: flex;
+             flex-direction: column;
+             width: 100%;
+             align-items: start;
+             gap: 1px;
+         }
+         
+         .informacion-txt {
+             color: var(--color-secundario);
+             font-size: 40%;
+             font-family: inter;
+             width: 100%;
+             line-height: 100%;
+             margin-top: 0%;
+             margin-bottom: 0%;
+         }
+         
+         .estilo-footer {
+             font-size: 0.5rem;
+             color: var(--color-secundario);
+             text-align: center;
+             align-items: center;
+             margin-top: 0%;
+         }
+         
+         .area-conversion {
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             flex-grow: 1;
+             /*box-sizing: border-box;*/
+             justify-content: center;
+             padding: 10px;
+             gap: 10px;
+             width: 100%;
+             align-items: center;
+         }
+         
+         .text-area2 {
+             width: 100%;
+         }
+         
+         @media(max-width:905px) {
+             .presentacion {
+                 display: flex;
+                 flex-direction: column;
+                 width: auto;
+                 margin-left: 5%;
+                 align-items: center;
+                 justify-content: center;
+             }
+             .area-conversion {
+                 width: 70%;
+                 align-items: center;
+             }
+             .estilo__footer {
+                 justify-content: center;
+             }
+             .informacion__txt {
+                 font-size: 25%;
+             }
+             .mensaje {
+                 background-position: top, bottom;
+                 background-size: 80%;
+             }
+             .botones {
+                 align-items: center;
+                 justify-content: left;
+             }
+             @media(max-width:640px) {
+                 .presentacion {
+                     gap: 50px;
+                 }
+                 .mensaje {
+                     background-position: center, bottom;
+                     background-size: 100%;
+                 }
+                 @media (max-width: 640px) {
+                     .botones {
+                         flex-direction: row;
+                         /* Alinea los botones en fila */
+                         gap: 8px;
+                         /* Reduce el espacio entre los botones */
+                         justify-content: center;
+                         /* Centra los botones en la pantalla */
+                     }
+                     .boton-encriptar,
+                     .boton-desencriptar {
+                         height: 50px;
+                         /* Reduce la altura de los botones */
+                         width: 48%;
+                         /* Ajusta el ancho de los botones para que quepan uno al lado del otro */
+                         font-size: 1rem;
+                         /* Reduce el tamaño de la fuente */
+                     }
+                 }
+                 .btncopiar {
+                     height: 50px;
+                 }
+                 @media(max-width:480px) {
+                     .mensaje {
+                         background-position: center, bottom;
+                         background-size: 110%;
+                     }
+                 }
+             }

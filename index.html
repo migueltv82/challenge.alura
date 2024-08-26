@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <title>Challenge__Encriptador</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,28 +19,27 @@
 
     <main class="presentacion">
         <section class="ingreso-txt">
-            <textarea id="ingreso-txt" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div class="div-informacion">
                 <h6 class="informacion-txt">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button id="encryptBtn" class="encrytp-btn">Encriptar</button>
-                <button id="decryptBtn" class="decryptBtn">Desencriptar</button>
+                <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
 
         <section class="area-conversion">
             <div class="text-area2">
-                <textarea id="resultText" class="mensaje" cols="18" rows="13"></textarea>
+                <textarea class="mensaje" cols="18" rows="13"></textarea>
             </div>
 
             <div class="btn-copiar">
-                <button id="btn-copiar" class="boton-copiar">Copiar</button>
+                <button class="boton-copiar" onclick="btnCopiar()">Copiar</button>
             </div>
         </section>
     </main>
-
-    <footer class="estilo-footer">Creado por Miguel Torres Viaña</footer>
+    <footer class="estilo-footer">Creado por Miguel Torres Viaña, Copyright 2024</footer>
     <script src="script.js"></script>
 </body>
 
