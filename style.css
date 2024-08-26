@@ -274,7 +274,69 @@ body {
     }
 }
 
+/* Para pantallas entre 481px y 1024px, como notebooks */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .area-conversion {
+        width: 90%;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .mensaje {
+        width: 100%;
+        background-position: center, bottom;
+        background-size: contain;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .botones {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .boton-encriptar,
+    .boton-desencriptar,
+    .boton-copiar {
+        width: 48%;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+    .text-area, .text-area2 textarea {
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    body {
+        overflow-y: hidden; /* Evita el scroll vertical */
+    }
+}
+
+
+/* Para pantallas pequeñas, como móviles */
 @media(max-width: 480px) {
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .area-conversion {
+        width: 100%;
+        align-items: center;
+    }
     .mensaje {
         background-position: center, bottom;
         background-size: 110%;
@@ -299,3 +361,99 @@ body {
         margin: 0 auto;
     }
 }
+@media (min-width: 881px) and (max-width: 1024px) {
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .area-conversion {
+        width: 95%;
+        align-items: center;
+        padding: 0 5px;
+    }
+    .mensaje {
+        width: 100%;
+        background-position: center, bottom;
+        background-size: contain;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .botones {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 8px;
+    }
+    .boton-encriptar,
+    .boton-desencriptar,
+    .boton-copiar {
+        width: 90%;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    .text-area, .text-area2 textarea {
+        width: 95%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    body {
+        overflow-y: auto; /* Permite scroll si es necesario */
+    }
+}
+
+/* Ajuste adicional para pantallas pequeñas como móviles */
+@media(max-width: 880px) {
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .area-conversion {
+        width: 100%;
+        align-items: center;
+        padding: 0 5px;
+    }
+    .mensaje {
+        width: 100%;
+        background-position: center, bottom;
+        background-size: contain;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .botones {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+    }
+    .boton-encriptar,
+    .boton-desencriptar,
+    .boton-copiar {
+        width: 95%;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    .text-area, .text-area2 textarea {
+        width: 95%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    body {
+        overflow-y: auto; /* Permite scroll si es necesario */
+    }
+}
+
+
